@@ -2927,7 +2927,7 @@ const predictionSystem = new UltraDicePredictionSystem();
 // API endpoint
 get('/predict', async (req, res) => {
     try {
-        const response = await axios.get('http://localhost:5000/api/taixiu');
+        const response = await axios.get('https://hit-club.onrender.com/api/history/taixiu');
         const data = response.data;
         
         // SỬA TẠI ĐÂY: data.ketqua -> data.Ket_qua
